@@ -1,0 +1,1 @@
+pdftk input_file.pdf cat 111-222 output output_file.pdf # extract pages 111-222 from input_file.pdf to output_file.pdf
