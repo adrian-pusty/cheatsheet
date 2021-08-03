@@ -5,6 +5,16 @@ public class Java
 
         Stream<Path> pathStream = Files.find(Path.of("/some/path"), 10, (Path p, BasicFileAttributes bfa) -> p.toString().endsWith(".txt")); // https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#find(java.nio.file.Path,int,java.util.function.BiPredicate,java.nio.file.FileVisitOption...)
     }
+
+    @Test
+    public void dateDiff()
+    {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date firstDate = sdf.parse("1992-05-04");
+        Date secondDate = sdf.parse("1992-05-05");
+
+        TimeUnit.DAYS.convert((secondDate.getTime() - firstDate.getTime()), TimeUnit.MILLISECONDS);
+    }
 }
 
 class AssertThrowsJunit5 {

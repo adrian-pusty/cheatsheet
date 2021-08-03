@@ -31,9 +31,10 @@ npm install -g helpeth <br />
 helpeth keyDetails -p {address prefixed with 0x}
 
 ## Hex Encoding with Checksum in Capitalization
-Capitalize each alphabetic address<sup>[1]</sup> character if the corresponding hex digit of the hash<sup>[2]</sup>  is **greater than or equal to 0x8**.<br/>
+<i>Protecting the integrity of the address against typing or reading mistakes</i> (see: [validation](https://github.com/ethereumbook/ethereumbook/blob/develop/04keys-addresses.asciidoc#detecting-an-error-in-an-eip-55-encoded-address))
+<br /><br />Capitalize each alphabetic address<sup>[1]</sup> character if the corresponding hex digit of the hash<sup>[2]</sup>  is **greater than or equal to 0x8**.<br/>
 <br />[1] - Lowercase address, without the 0x prefix
-<br />[2] - Keccak256 hash of the lowercase hexadecimal address
+<br />[2] - First 20 bytes of Keccak256 hash of the lowercase hexadecimal address
 
 --------------------
 https://github.com/ethereumbook/ethereumbook/

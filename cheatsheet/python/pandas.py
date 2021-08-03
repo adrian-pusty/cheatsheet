@@ -5,6 +5,7 @@ df = pd.read_csv('in.csv', error_bad_lines=False)
 df.to_csv('out.txt', index=False, header=False, quoting=csv.QUOTE_NONE)
 
 df.columns = ['new_col_name_1', 'new_col_name_2'] # renaming column names
+df.head(1) # Return the first n rows. # df.head() - Viewing the first 5 lines # ~https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html
 
 df['col1'] = df['col1'].str.replace(',', '-')
 df['col1'] = df['col1'].str.slice(0, 9)
