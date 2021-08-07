@@ -1,0 +1,6 @@
+<!--Resolve dependency versions used by SpringBoot-->
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-dependencies</artifactId>
+    <version>...</version>
+</parent>

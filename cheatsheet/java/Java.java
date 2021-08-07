@@ -7,7 +7,10 @@ public class Java
 
         Stream<Path> pathStream = Files.find(Path.of("/some/path"), 10, (Path p, BasicFileAttributes bfa) -> p.toString().endsWith(".txt")); // https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#find(java.nio.file.Path,int,java.util.function.BiPredicate,java.nio.file.FileVisitOption...)
     }
+}
 
+class Dates
+{
     @Test
     public void dateDiff()
     {
@@ -16,6 +19,15 @@ public class Java
         Date secondDate = sdf.parse("1992-05-05");
 
         TimeUnit.DAYS.convert((secondDate.getTime() - firstDate.getTime()), TimeUnit.MILLISECONDS);
+    }
+
+    @Test
+    public void createDateAndTimestampWithCurrentTime()
+    {
+        new Timestamp(System.currentTimeMillis());
+        new Timestamp(new Date().getTime());
+
+        new Date();
     }
 }
 

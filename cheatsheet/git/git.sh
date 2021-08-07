@@ -7,3 +7,5 @@ git commit --amend
 git commit --amend -m "updated message"
 
 git rebase -i HEAD~n # Interactive rebase of n last commits locally
+
+git config -l # list all

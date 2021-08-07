@@ -1,3 +1,10 @@
+# Useful links
+[• Remix - Ethereum IDE](https://remix.ethereum.org/) <br />
+[• Ropsten Ethereum Faucet (testnet)](https://faucet.ropsten.be/) <br />
+[• Mastering Ethereum book (GitHub)](https://github.com/ethereumbook/ethereumbook) <br />
+[• ETH Gas Station | Consumer oriented metrics for the Ethereum gas market](https://www.ethgasstation.info) <br />
+[• ]() <br />
+
 # Elliptic Curve
 **secp256k1 elliptic curve** ( see: [bitcoin-core
 secp256k1]( https://github.com/bitcoin-core/secp256k1) )<br />
@@ -37,4 +44,4 @@ helpeth keyDetails -p {address prefixed with 0x}
 <br />[2] - First 20 bytes of Keccak256 hash of the lowercase hexadecimal address
 
 --------------------
-https://github.com/ethereumbook/ethereumbook/
+~ https://github.com/ethereumbook/ethereumbook/
