@@ -1,3 +1,14 @@
+# config
+git config --global user.name "Global Name"
+git config --global user.email "global-email@abc.def"
+git config user.name "Repo Specific Name"
+git config user.email "repospecific-email@abc.def"
+
+git config -l # list all
+
+# ...
+git remote rm {remote-name} # remove remote
+
 git reset HEAD~ # Delete last commit locally
 
 git checkout -b branch_name # Create new branch locally
@@ -7,5 +18,3 @@ git commit --amend
 git commit --amend -m "updated message"
 
 git rebase -i HEAD~n # Interactive rebase of n last commits locally
-
-git config -l # list all

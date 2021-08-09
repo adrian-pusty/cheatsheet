@@ -43,5 +43,11 @@ helpeth keyDetails -p {address prefixed with 0x}
 <br />[1] - Lowercase address, without the 0x prefix
 <br />[2] - First 20 bytes of Keccak256 hash of the lowercase hexadecimal address
 
+# Wallets
+HD wallet tree structure: <br />
+m / purpose' / coin_type' / account' / change / address_index <br />
+where: <br />
+coin_type - type of cryptocurrency coin (see: [SLIP0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md))
+
 --------------------
 ~ https://github.com/ethereumbook/ethereumbook/

@@ -5,7 +5,7 @@ ls -1 .		# Listing files in a single column
 ls -lh    # -h, --human-readable # print sizes like 1K 234M 2G etc.
 
 du -sm *  # ~howtogeek.com/168135/list-files-and-directories-by-size-on-linux/
-du -sh abc* | sort - rh # sort by size
+du -sh abc* | sort -rh # sort by size
 
 cat file1 file2 file3 >> output # merging file1, file2 and file3 to output file
 
