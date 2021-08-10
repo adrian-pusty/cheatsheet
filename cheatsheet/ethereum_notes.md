@@ -1,9 +1,16 @@
 # Useful links
-[• Remix - Ethereum IDE](https://remix.ethereum.org/) <br />
-[• Ropsten Ethereum Faucet (testnet)](https://faucet.ropsten.be/) <br />
-[• Mastering Ethereum book (GitHub)](https://github.com/ethereumbook/ethereumbook) <br />
-[• ETH Gas Station | Consumer oriented metrics for the Ethereum gas market](https://www.ethgasstation.info) <br />
-[• ]() <br />
+[• Remix - Ethereum IDE](https://remix.ethereum.org/) 
+<br />
+[• A minimal ethereum javascript wallet (BIP-32-compatible)](https://github.com/ConsenSys/eth-lightwallet )
+<br />
+[• Ropsten Ethereum Faucet (testnet)](https://faucet.ropsten.be/)
+<br /><br />
+[• Mastering Ethereum book (GitHub)](https://github.com/ethereumbook/ethereumbook) 
+<br />
+[• ETH Gas Station | Consumer oriented metrics for the Ethereum gas market](https://www.ethgasstation.info) 
+<br /><br />
+[• ]() 
+<br />
 
 # Elliptic Curve
 **secp256k1 elliptic curve** ( see: [bitcoin-core
@@ -44,10 +51,24 @@ helpeth keyDetails -p {address prefixed with 0x}
 <br />[2] - First 20 bytes of Keccak256 hash of the lowercase hexadecimal address
 
 # Wallets
-HD wallet tree structure: <br />
+## Generating mnemonic words (and then seed)
+1. **S** = Cryptographically random sequence of 128 to 256 bits.
+2. **checksum** = n-first bits of the: SHA-256( S ), 
+   where: <br />
+   • n = length_of_s / 32
+3. **sequence_and_checksum** = concatenation( S,https://github.com/ConsenSys/eth-lightwallet checksum )
+4. Divide sequence_and_checksum into sections of 11 bits
+5. **mnemonic_code** = sequence of words: each 11-bit value mapped to a word (one of 2048 words //**todo** link))
+6. **seed** (512-bit) = PBKDF2( concatenation( mnemonic_code, **salt** )), where:<br />
+   • PBKDF2 – key-stretching function<br />
+   • salt – concatenation(  “mnemonic”, (optional)passphrase )
+
+
+## HD wallet tree structure: <br />
 m / purpose' / coin_type' / account' / change / address_index <br />
 where: <br />
 coin_type - type of cryptocurrency coin (see: [SLIP0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md))
+
 
 --------------------
 ~ https://github.com/ethereumbook/ethereumbook/
