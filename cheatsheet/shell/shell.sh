@@ -13,7 +13,4 @@ find . -name '*java' -mtime +10 -newer App.java
 
 echo $((0xF)) # Prints 15
 
-#for loop
-for x in a b c d e f; do
-    echo letter:${x}
-done
+mutool convert -o output_file.txt input_file.epub # https://mupdf.com/
