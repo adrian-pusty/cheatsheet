@@ -1,7 +1,7 @@
 import pandas as pd
 import csv
 
-df = pd.read_csv('in.csv', error_bad_lines=False)
+df = pd.read_csv('in.csv', error_bad_lines=False, usecols=['foo', 'bar'], nrows=10) # nrows (optional parameter) - Number of rows of file to read. Useful for reading pieces of large files.
 df.to_csv('out.txt', index=False, header=False, quoting=csv.QUOTE_NONE)
 
 df.columns = ['new_col_name_1', 'new_col_name_2'] # renaming column names

@@ -60,12 +60,16 @@ Generating mnemonic words (and then seed)
    ](https://github.com/ConsenSys/eth-lightwallet) - A minimal ethereum javascript wallet. [...]  It uses BIP32 and BIP39 to generate an HD tree of addresses from a randomly generated 12-word seed.
 
 ## HD wallet tree structure  
+
 m / purpose' / coin_type' / account' / change / address_index  
 where:  
 coin_type - type of cryptocurrency coin (see: [SLIP0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md))
+
 -------------------------------------------------
 # Useful links
 - [The Ethereum Improvement Proposal repository (GitHub)](https://github.com/ethereum/EIPs)
+
+- [**Docs Solidity**](https://docs.soliditylang.org/en/latest/) 
 
 - [Remix - Ethereum IDE](https://remix.ethereum.org/)
   
