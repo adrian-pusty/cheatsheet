@@ -16,7 +16,10 @@
 
 ## Links
 [link to google](https://google.com)  
-![google img](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+[link to a place on this page](#sample_link_on_the_same_page)
+![google img](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png) 
+### Image with custom size
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="drawing" width="75" height="25"/>
 
 ### Other
 [//]: #"comment"
@@ -28,6 +31,6 @@
 >> ipsum
 >>> etc
 
-#### New line
+#### New line <a name=sample_link_on_the_same_page></a>
 add two spaces at the end of the line to    
 go to a new line

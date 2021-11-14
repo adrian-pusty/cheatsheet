@@ -70,6 +70,7 @@ coin_type - type of cryptocurrency coin (see: [SLIP0044](https://github.com/sato
 - [The Ethereum Improvement Proposal repository (GitHub)](https://github.com/ethereum/EIPs)
 
 - [**Docs Solidity**](https://docs.soliditylang.org/en/latest/) 
+- [GitHub Solidity](https://github.com/ethereum/solidity)
 
 - [Remix - Ethereum IDE](https://remix.ethereum.org/)
   
@@ -80,5 +81,7 @@ coin_type - type of cryptocurrency coin (see: [SLIP0044](https://github.com/sato
 - [Mastering Ethereum book (GitHub)](https://github.com/ethereumbook/ethereumbook)
   
 - [ETH Gas Station | Consumer oriented metrics for the Ethereum gas market](https://www.ethgasstation.info)
+
+- [The ERC20 standard](http://bit.ly/2CUf7WG)
 --------------------
 ~ https://github.com/ethereumbook/ethereumbook/
