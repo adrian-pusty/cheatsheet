@@ -1,4 +1,4 @@
-name := "scala_cheatsheet"
+name := "apache_spark"
 
 version := "0.1"
 

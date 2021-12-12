@@ -20,3 +20,5 @@ echo "cd ~/path/to/directory" >> ~/.bashrc
 # creating an alias
 vim ~/.bash_aliases # add line: alias name_of_alias='some command -option'
 source ~/.bashrc
+
+grep -rnw '/path/to/somewhere/' -e 'pattern' # https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
