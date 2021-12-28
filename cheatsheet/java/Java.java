@@ -62,6 +62,13 @@ class AssertThrowsJunit5
 
         assertTrue(thrown.getMessage().contains("Stuff"));
     }
+
+    @Test
+    void floatingPointComparisons()
+    {
+        Assertions.assertEquals(0, Float.compare(1f, 1.0f));
+        Assertions.assertEquals(-1, Double.compare(2.3, 3.1));
+    }
 }
 
 @Entity

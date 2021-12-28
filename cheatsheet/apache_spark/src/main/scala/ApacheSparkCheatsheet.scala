@@ -1,5 +1,6 @@
+import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
-import org.apache.spark.sql.{DataFrame, Row, SparkSession}
+import org.apache.spark.sql.{Column, DataFrame, Row, SparkSession}
 
 object ApacheSparkCheatsheet {
   case class Person(name: String, age: Int, sex: String)
@@ -73,5 +74,10 @@ object ApacheSparkCheatsheet {
   {
     peopleDF.createOrReplaceTempView("people")
     spark.sql("SELECT * FROM people WHERE age < 25")
+  }
+
+  def columnBasedOnTheGivenColumnName(): Column =
+  {
+    col("column_name")
   }
 }
