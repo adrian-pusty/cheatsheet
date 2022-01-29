@@ -13,8 +13,6 @@ find . -name '*java' -mtime +10 -newer App.java
 
 echo $((0xF)) # Prints 15
 
-mutool convert -o output_file.txt input_file.epub # https://mupdf.com/
-
 echo "cd ~/path/to/directory" >> ~/.bashrc
 
 # creating an alias
