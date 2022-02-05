@@ -6,6 +6,25 @@ public class Java
         str.substring(str.length() - 1); // Print last character from string. String str = "Hello world" -> "d"
 
         Stream<Path> pathStream = Files.find(Path.of("/some/path"), 10, (Path p, BasicFileAttributes bfa) -> p.toString().endsWith(".txt")); // https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#find(java.nio.file.Path,int,java.util.function.BiPredicate,java.nio.file.FileVisitOption...)
+
+        (int) (Math.log10(n)+1); // Number of digits in n
+    }
+
+    public void miscellaneous_strings() {
+        {
+            String lines[] = string.split("\\r?\\n"); // Split String by new line
+        }
+        {
+            import org.apache.commons.lang.StringUtils;
+            if (StringUtils.isNotBlank(str)) {
+            } // https://stackoverflow.com/questions/3598770/check-whether-a-string-is-not-null-and-not-empty
+        }
+        {
+            // Add leading zeroes to number in Java //https://stackoverflow.com/questions/275711/add-leading-zeroes-to-number-in-java
+            // 0 - to pad with zeros
+            // 3 - to set width to 3
+            String.format("%03d", num);
+        }
     }
 
     public static List<String> readLines(String fileName) throws FileNotFoundException

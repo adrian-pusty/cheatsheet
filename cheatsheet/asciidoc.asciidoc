@@ -1,0 +1,38 @@
+== Asciidoc cheatsheet
+=== List
+- a
+- aa
+- aaa
+- aaaa
+- b
+- c
+
+=== Table
+
+|===
+|aa |bb |cc
+
+|Column 1, row 1
+|Column 2, row 1
+|Column 3, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|Column 3, row 2
+|===
+
+=== Links
+https://google.com[link to google]
+
+// Image with defined size
+image::https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png[google img,250,350]
+
+=== Other
+// todo comment
+
+*bold*
+
+> lorem ipsum etc
+
+add space and plus at the end of the line to +
+go to a new line
