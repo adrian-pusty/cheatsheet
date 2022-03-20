@@ -7,6 +7,8 @@
   
 - [Junior to Senior with David Guttman (podcast)](https://juniortosenior.io/)
 
+- [MIT OPEN COURSEWARE, Electrical Engineering and Computer Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/)
+
 - [**Basic Syntax** -
 The Markdown elements outlined in John Gruber's design document](https://www.markdownguide.org/basic-syntax/)
 

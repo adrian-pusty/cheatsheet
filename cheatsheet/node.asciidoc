@@ -1,0 +1,2 @@
+== Installation
+https://github.com/nvm-sh/nvm[Node Version Manager] -> install.sh

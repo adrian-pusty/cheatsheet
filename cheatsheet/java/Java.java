@@ -27,6 +27,14 @@ public class Java
         }
     }
 
+    public void time()
+    {
+        {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("H:mm:ss");
+            LocalTime t = LocalTime.parse(times.get(i), formatter);
+        }
+    }
+
     public static List<String> readLines(String fileName) throws FileNotFoundException
     {
         List<String> lines = new ArrayList<>();

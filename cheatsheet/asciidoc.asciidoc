@@ -7,6 +7,14 @@
 - b
 - c
 
+* A 1
+** A 2
+
++
+Continuation of A 1
+
+*** A 3
+
 === Table
 
 |===
