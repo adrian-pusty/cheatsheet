@@ -1,0 +1,1 @@
+- [Jenkins environment variables: **${JENKINS_HOST}/env-vars.html**](https://e.printstacktrace.blog/jenkins-pipeline-environment-variables-the-definitive-guide/)

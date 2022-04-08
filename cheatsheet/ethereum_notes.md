@@ -50,7 +50,7 @@ Generating mnemonic words (and then seed)
    • n = length_of_S / 32
 3. **sequence_and_checksum** = concatenation( S, checksum )
 4. Divide sequence_and_checksum into sections of 11 bits
-5. **mnemonic_code** = sequence of words: each 11-bit value mapped to a word (one of 2048 words //**todo** link))
+5. **mnemonic_code** = sequence of words: each 11-bit value mapped to a word (one of 2048 words<sup>[1]</sup>))
 6. **seed** (512-bit) = PBKDF2( concatenation( mnemonic_code, **salt** )), where:  
    • PBKDF2 – key-stretching function  
    • salt – concatenation(  “mnemonic”, (optional)passphrase )  
@@ -58,6 +58,8 @@ Generating mnemonic words (and then seed)
 
 [ConsenSys/eth-lightwallet
    ](https://github.com/ConsenSys/eth-lightwallet) - A minimal ethereum javascript wallet. [...]  It uses BIP32 and BIP39 to generate an HD tree of addresses from a randomly generated 12-word seed.
+  
+[1] [bip-0039 wiki](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), [bip-0039 wordlists](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md)
 
 ## HD wallet tree structure  
 

@@ -5,5 +5,7 @@
 
 - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html#:~:text=Operators%20on%20the%20same%20line,are%20evaluated%20right%20to%20left[Operator Precedence]
 
+- https://www.eclipse.org/mat/[MAT - The Eclipse Memory Analyzer]
+
 === [PL]
 - https://szkolaandroida.pl/[Szkoła Androida]
