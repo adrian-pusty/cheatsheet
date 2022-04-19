@@ -9,3 +9,4 @@ pdfunite input_1.pdf input_2.pdf output.pdf # Merge multiple pdfs # worked a bit
 
 # Audio / Video
 ffmpeg -i input_file.extension -ss 00:01:23 -to 00:02:34 -c copy output_file.extension # ~https://unix.stackexchange.com/a/302469/447876 , https://stackoverflow.com/a/42827058/15493760
+sudo apt-get install easytag # audio file metadata manipulation tool

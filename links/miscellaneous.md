@@ -1,4 +1,4 @@
-### [EN]
+# [EN]
 - [SourceMaking - Design Patterns & Refactoring](https://sourcemaking.com/)
 - [When is inheritance preferable to composition? - Uncle Bob Martin](https://twitter.com/unclebobmartin/status/1308029540871045120)
   
@@ -19,3 +19,9 @@ The Markdown elements outlined in John Gruber's design document](https://www.mar
 - [Apache Spark - Instructor led training](https://academy.databricks.com/instructor-led-training/DB095)
 
 - [IntelliJ IDEA - Windows & Linux keymap](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
+
+## Contribute to projects on GitHub
+- [Relevant projects, first issues](https://github.com/topics/<TOPIC>)
+- [Personalized recommendations](https://github.com/explore)
+- [GitHub Community Support](https://github.community/)
+- [First issues for specific repo](github.com/<owner>/<repository>/contribute)
