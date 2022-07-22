@@ -1,16 +1,14 @@
 # [EN]
 - [SourceMaking - Design Patterns & Refactoring](https://sourcemaking.com/)
 - [When is inheritance preferable to composition? - Uncle Bob Martin](https://twitter.com/unclebobmartin/status/1308029540871045120)
-  
-- [Regex Generator](https://regex.help/)
-- [The Premier website about Regular Expressions](https://www.regular-expressions.info/) ~https://youtu.be/U0GbJtnfqSM?t=170  
+- [Are exceptions as control flow considered a serious antipattern? If so, Why?](https://softwareengineering.stackexchange.com/questions/189222/are-exceptions-as-control-flow-considered-a-serious-antipattern-if-so-why)
   
 - [Junior to Senior with David Guttman (podcast)](https://juniortosenior.io/)
 
 - [MIT OPEN COURSEWARE, Electrical Engineering and Computer Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/)
+- [Oracle Dev Gym](https://devgym.oracle.com/pls/apex/f?p=10001:20011::::20011::)
 
-- [**Basic Syntax** -
-The Markdown elements outlined in John Gruber's design document](https://www.markdownguide.org/basic-syntax/)
+- [**Basic Syntax** - The Markdown elements outlined in John Gruber's design document](https://www.markdownguide.org/basic-syntax/)
 
 - [Adding Page Numbers to a PDF (tex)](https://forums.linuxmint.com/viewtopic.php?p=1201936#p1201936)
 
@@ -19,6 +17,13 @@ The Markdown elements outlined in John Gruber's design document](https://www.mar
 - [Apache Spark - Instructor led training](https://academy.databricks.com/instructor-led-training/DB095)
 
 - [IntelliJ IDEA - Windows & Linux keymap](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
+
+- [Test your shell knowledge by taking the CMD Challenge](https://cmdchallenge.com/)
+
+## Regex
+- [Regex Generator](https://regex.help/)
+- [What is POSIX in Unix? Linux Terminal 201 - HakTip 161](https://youtu.be/U0GbJtnfqSM?t=170) → [**The Premier website about Regular Expressions**](https://www.regular-expressions.info/) 
+- [unknowNews](https://news.mrugalski.pl/) → [**Regex visualizer & editor, make the regular expression easier**](https://regex-vis.com/?r=%5E%28%28%5BuU%5Dnknow%29%5B+%5D%3F%28%5BnN%5Dews%7Cnewsletter%29%29%24)
 
 ## Contribute to projects on GitHub
 - [Relevant projects, first issues](https://github.com/topics/<TOPIC>)

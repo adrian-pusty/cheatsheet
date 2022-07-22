@@ -7,5 +7,7 @@
 
 - https://www.eclipse.org/mat/[MAT - The Eclipse Memory Analyzer]
 
+- https://twitter.com/javarevisited/status/1545636804144951297?t=Lb4ARBAsgwtkuHyfTyBTvA&s=19[Java Collections]
+
 === [PL]
 - https://szkolaandroida.pl/[Szkoła Androida]
