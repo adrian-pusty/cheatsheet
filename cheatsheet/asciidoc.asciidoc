@@ -45,3 +45,11 @@ image::https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272
 
 add space and plus at the end of the line to +
 go to a new line
+
+++++
+<p style="color:blue;">use of 'p' tag with color specified in style attribute</p>
+++++
++++
+<p style="color:blue;">use of 'p' tag with color specified in style attribute</p>
++++
+//see also: https://asciidoctor.org/docs/asciidoc-writers-guide/#pass-blocks
