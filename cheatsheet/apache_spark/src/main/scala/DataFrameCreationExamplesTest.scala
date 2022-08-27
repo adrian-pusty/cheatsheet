@@ -1,4 +1,4 @@
-import ApacheSparkCheatsheet.createSparkSession
+import ApacheSparkCheatsheet.{createSparkSession, sparkSqlStatementExample}
 import FileToDataFrame.fromJsonExample
 import RddToDataFrame.{withColumnNamesSpecifiedExample, withNumbersAsAttributesExample, withSchemaExplicitlySpecifiedExample, withSchemaReflectivelyInferredExample}
 import org.apache.spark.rdd.RDD
@@ -9,27 +9,27 @@ import scala.Double.NaN
 object DataFrameCreationExamplesTest {
 
   val spark: SparkSession = createSparkSession
-  val tupleSeq: Seq[(String, Int, String)] = Seq(("John", 20 , "M"), ("Sara", 30, "F"))
+  val tupleSeq: Seq[(String, Int, Int)] = Seq(("John", 20 , 0), ("Sara", 30, 10))
   val personSeq: Seq[Person] = tupleSeq.map(tuple => Person(tuple._1, tuple._2, tuple._3))
   val rddFromCsv: RDD[String] = spark.sparkContext.textFile("src/main/resources/input.csv")
-  //todo where is input from json?
   val seqWithNan = Seq(
     ("Michał", NaN , 1),
     ("Maria", 30, 2),
-    ("Adrian", 99, NaN), //an expression of type Null is ineligible for implicit conversion
+    ("Adrian", 99, NaN),
     ("Anna", 0,0))
 
-  case class Person(name: String, age: Int, sex: String)
+  case class Person(name: String, salary: Int, nrOfChildren: Int)
 
   def main(args: Array[String]): Unit =
   {
-    val wcns = withColumnNamesSpecifiedExample(spark, tupleSeq)
-    val wnaa = withNumbersAsAttributesExample(spark, tupleSeq)
-    val wsri = withSchemaReflectivelyInferredExample(spark, personSeq)
-    val wses = withSchemaExplicitlySpecifiedExample(spark)
-    val fj = fromJsonExample(spark)
+    val df = withSchemaReflectivelyInferredExample(spark, personSeq)
+    sparkSqlStatementExample(spark, df).show()
 
-    //todo
+    withColumnNamesSpecifiedExample(spark, tupleSeq).show()
+    withNumbersAsAttributesExample(spark, tupleSeq).show()
+    withSchemaReflectivelyInferredExample(spark, personSeq).show()
+    withSchemaExplicitlySpecifiedExample(spark).show()
+    fromJsonExample(spark).show()
   }
 
   def dfSchema(df: DataFrame): Array[String] =

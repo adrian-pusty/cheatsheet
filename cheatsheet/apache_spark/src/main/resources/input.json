@@ -1,4 +1,4 @@
-{ "name": "John", "age": 36, "sex": "M"}
-{ "name": "Mary", "age": 73, "sex": "F"}
-{ "name": "Tom", "age": 10, "sex": "M"}
-{ "name": "Kathy", "age": 23, "sex": "F"}
+{ "name": "Michał", "salary": NaN, "nrOfChildren": 1}
+{ "name": "Maria", "salary": 30, "nrOfChildren": 2}
+{ "name": "Adrian", "salary": 99, "nrOfChildren": NaN}
+{ "name": "Anna", "salary": 0, "nrOfChildren": 0}

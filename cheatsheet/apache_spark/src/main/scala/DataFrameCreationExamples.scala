@@ -1,6 +1,4 @@
-import DataFrameCreationExamplesTest.{Person, rddFromCsv, spark}
-import FileToDataFrame.{fromCsv, fromJson}
-import SeqToDataFrame.fromSeqExample
+import DataFrameCreationExamplesTest.{Person, rddFromCsv}
 import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
 import org.apache.spark.sql.{Column, DataFrame, Row, SparkSession}
@@ -21,7 +19,7 @@ object ApacheSparkCheatsheet {
   def sparkSqlStatementExample(spark: SparkSession, peopleDF: DataFrame): DataFrame =
   {
     peopleDF.createOrReplaceTempView("people")
-    spark.sql("SELECT * FROM people WHERE age < 25")
+    spark.sql("SELECT * FROM people WHERE salary > 25")
   }
 
   def columnBasedOnTheGivenColumnName(): Column =
@@ -32,15 +30,15 @@ object ApacheSparkCheatsheet {
 
 object RddToDataFrame
 {
-  def withColumnNamesSpecifiedExample(spark: SparkSession, tupleSeq: Seq[(String, Int, String)]): DataFrame =
+  def withColumnNamesSpecifiedExample(spark: SparkSession, tupleSeq: Seq[(String, Int, Int)]): DataFrame =
   {
     val rdd = spark.sparkContext.parallelize(tupleSeq)
 
     import spark.implicits._
-    rdd.toDF("name", "age", "sex")  // does not compile (Cannot resolve symbol toDF) if 'import spark.implicits._' is commented out // https://stackoverflow.com/a/47185056/15493760
+    rdd.toDF("name", "salary", "nrOfChildren")  // does not compile (Cannot resolve symbol toDF) if 'import spark.implicits._' is commented out // https://stackoverflow.com/a/47185056/15493760
   }
 
-  def withNumbersAsAttributesExample(spark: SparkSession, tupleSeq: Seq[(String, Any, Any)]): DataFrame =
+  def withNumbersAsAttributesExample(spark: SparkSession, tupleSeq: Seq[(String, Int, Int)]): DataFrame =
   {
     val rdd = spark.sparkContext.parallelize(tupleSeq)
 
@@ -58,7 +56,7 @@ object RddToDataFrame
 
   def withSchemaExplicitlySpecifiedExample(spark: SparkSession): DataFrame =
   {
-    val schemaString = "NAME AGE SEX"
+    val schemaString = "NAME SALARY NR_OF_CHILDREN"
     val fields = schemaString
       .split(" ")
       .map(fieldName => StructField(fieldName, StringType, nullable = true))
@@ -111,27 +109,3 @@ object SeqToDataFrame
   }
 }
 
-object FillAndReplace
-{
-  def main(args: Array[String]): Unit = {
-    replaceUnwantedValues(fromJson(spark, "src/main/resources/input2.json")).show()
-//    replaceUnwantedValues(fromCsv(spark, "src/main/resources/input2.csv")).show()
-    replaceUnwantedValues(fromSeqExample(spark)).show()
-  }
-
-  def replaceUnwantedValues(df: DataFrame): DataFrame =
-  {
-    var res = df.na.fill(Map("nrOfChildren" -> -1))
-    res = res.na.fill(0) // replaces NaN, does not replace null
-    res.na.replace(Array("name"), Map("Anna" -> "Ania"))
-  }
-
-////  Does not work as expected.
-//  def replacing(df: DataFrame): Unit =
-//  {
-//    df.na.fill(Map("nrOfChildren" -> -1))
-//    df.na.fill(0)
-//    df.na.replace(Array("name"), Map("Anna" -> "Ania"))
-//    df.show()
-//  }
-}

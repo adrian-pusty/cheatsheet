@@ -2,7 +2,6 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
-//todo should I create a separate spark-cheatsheet or keep it in main cheatsheet once finished?
 public class SparkReadFromParquetWriteToCsv {
     /**
      * name,age,sex

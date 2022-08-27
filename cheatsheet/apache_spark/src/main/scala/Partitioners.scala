@@ -17,7 +17,7 @@ object Partitioners {
    * @see https://spark.apache.org/docs/latest/api/scala/org/apache/spark/HashPartitioner.html
    */
   def createPartitioners(spark: SparkSession): Unit = {
-    val rdd = spark.sparkContext.parallelize(Seq(Person("John", 20 , "M"), Person("Sara", 30, "F")))
+    val rdd = spark.sparkContext.parallelize(Seq(Person("John", 20 , 0), Person("Sara", 30, 10)))
       .map(x =>(x.name,x)): RDD[(String, Person)] // RangePartitioner wouldn't compile without map at the end ("Type RangePartitioner takes type parameters")
 
     rdd.cache()
