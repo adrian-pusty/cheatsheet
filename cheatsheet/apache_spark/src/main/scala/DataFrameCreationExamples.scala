@@ -24,7 +24,12 @@ object ApacheSparkCheatsheet {
 
   def columnBasedOnTheGivenColumnName(): Column =
   {
-    col("column_name")
+    col("name_of_the_column")
+  }
+
+  def aliasForTheColumn(): Column =
+  {
+    col("name_of_the_column").as("column_name")
   }
 }
 

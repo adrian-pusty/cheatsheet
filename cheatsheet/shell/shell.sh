@@ -24,3 +24,5 @@ grep -rnw '/path/to/somewhere/' -e 'pattern' # https://stackoverflow.com/questio
 # shutdown / reboot
 sudo poweroff
 sudo reboot
+
+tar -xvjf file.tar.bz2  # extract bz2
