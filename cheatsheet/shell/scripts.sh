@@ -11,3 +11,12 @@ for file in /some/path/*
 do
         mv "$file" "${file// /_}"
 done
+
+# for loop + if statement
+END=99
+for ((i=1;i<=END;i++)); do
+    if (($i%2 == 1))
+    then
+        echo $i;
+    fi
+done
