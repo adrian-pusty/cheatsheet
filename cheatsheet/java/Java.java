@@ -34,16 +34,36 @@ public class Java
             LocalTime t = LocalTime.parse(times.get(i), formatter);
         }
     }
-
-    public static List<String> readLines(String fileName) throws FileNotFoundException
+    
+    /**
+     * "\n" - to consume whole line, it would split on whitespace without useDelimiter("\n")
+     * @see "Scanner.java -> \p{javaWhitespace}"
+     */
+    public static List<String> readLines1(String pathToFile) throws FileNotFoundException
     {
         List<String> lines = new ArrayList<>();
-        try(Scanner s = new Scanner(new File(fileName)))
+        
+        try(Scanner s = new Scanner(new File(pathToFile)).useDelimiter("\n"))
         {
             while(s.hasNext())
             {
                 lines.add(s.next());
             }
+        }
+        return lines;
+    }
+
+    private static List<String> readLines2(String pathToFile) throws IOException
+    {
+        List<String> lines = new ArrayList<>();
+
+        InputStream is = new FileInputStream(pathToFile);
+        InputStreamReader isr = new InputStreamReader(is, StandardCharsets.UTF_8);
+        BufferedReader br = new BufferedReader(isr);
+
+        for (String line; (line = br.readLine()) != null; )
+        {
+            lines.add(line);
         }
         return lines;
     }
