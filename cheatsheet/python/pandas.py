@@ -31,3 +31,6 @@ df = df[df['col1'] != 123]
 df = df[df.col1 > 100] # only rows where col greater than 100
 
 df.drop('col1', axis=1)
+
+df.rolling(window=30).mean() # Simple Moving Average, 30-days window
+df.ewm(span=30).mean() # Exponentially Weighted Moving Average
