@@ -30,7 +30,8 @@ df = df[(df['col1'] == 'val1') & (df['col2'] == 123)]
 df = df[df['col1'] != 123]
 df = df[df.col1 > 100] # only rows where col greater than 100
 
-df.drop('col1', axis=1)
+df = df.drop('1', axis=0)       # delete row '1'
+df = df.drop('col_1', axis=1)   # delete column 'col_1'
 
 df.rolling(window=30).mean() # Simple Moving Average, 30-days window
 df.ewm(span=30).mean() # Exponentially Weighted Moving Average
