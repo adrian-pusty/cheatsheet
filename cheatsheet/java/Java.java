@@ -9,6 +9,12 @@ public class Java
 
         (int) (Math.log10(n)+1); // Number of digits in n
     }
+    
+    public static int randomInteger(int min, int max)
+    {
+        Random random = new Random();
+        return random.nextInt((max - min) + 1) + min;
+    }
 
     public void miscellaneous_strings() {
         {
