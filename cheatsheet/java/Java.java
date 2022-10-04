@@ -1,3 +1,9 @@
+class BigDecimalScaleAndPrecision
+{
+    BigDecimal withPrecision = new BigDecimal("12345.6789").round(new MathContext(3, RoundingMode.HALF_UP)); // 1.23E+4 - three significant digits
+    BigDecimal withScale = new BigDecimal("12345.6789").setScale(3, RoundingMode.HALF_UP); // 12345.679 - three digits to the right of the decimal point
+}
+
 public class Java
 {
     @Test
