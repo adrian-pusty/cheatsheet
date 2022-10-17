@@ -30,4 +30,12 @@ class TimeJavaMiscellaneous
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("H:mm:ss");
         return LocalTime.parse(val, formatter);
     }
+    
+    public void duration()
+    {
+        long startTime = System.nanoTime();
+        // some method invocation
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime);  //divide by 1000000 to get milliseconds.
+    }
 }
