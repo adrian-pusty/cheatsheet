@@ -1,8 +1,17 @@
+<head>
+    <meta http-equiv="Content-Language" content="pl">
+    <meta charset="UTF-8">
+</head>
+ąęćźł<br>
 <b>bold</b>
 <i>italic</i>
 <u>underlined</u>
 <a href="https://www.w3schools.com/colors/colors_picker.asp">colors picker</a>
-<u style="color:#ccccff">color</u>
+<span style="color:Gray">Gray,</span>
+<span style="color:#808080">Gray #,</span>
+<span style="color:rgb(128, 128, 128)">Gray rgb,</span>
+<span style="color:hsl(0, 0%, 50%)">Gray hsl</span>
+<br>Hello <span style="color:green">World!</span>
 <table border="1">
     <tr>
         <th>header, col 1</th>
@@ -11,7 +20,15 @@
     </tr>
     <tr>
         <td>row 1, col 1</td>
-        <td>row 1, col 2</td>
+        <td rowspan="2">row 1 and 2; col 2</td>
         <td>row 1, col 3</td>
     </tr>
+    <tr>
+        <td>row 2, col 2</td>
+        <th>row 2, col 3</th>
+    </tr>
+    <tr>
+        <td colspan="3" align="right">row 3; col 1, 2 and 3</td>
+    </tr>
 </table>
+<img src="image.png" width="50%" height="50%"/>
