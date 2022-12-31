@@ -1,3 +1,6 @@
+- [Intro to Elasticsearch and Kibana](https://github.com/LisaHJung/Part-1-Intro-to-Elasticsearch-and-Kibana)
+- Circle CI configuration: Create .circleci directory in a root directory of the project and config.yml file with configuration inside this directory
+
 # [EN]
 - [SourceMaking - Design Patterns & Refactoring](https://sourcemaking.com/)
 - [When is inheritance preferable to composition? - Uncle Bob Martin](https://twitter.com/unclebobmartin/status/1308029540871045120)

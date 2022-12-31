@@ -1,2 +1,0 @@
-- [Intro to Elasticsearch and Kibana](https://github.com/LisaHJung/Part-1-Intro-to-Elasticsearch-and-Kibana)
-- Circle CI configuration: Create .circleci directory in a root directory of the project and config.yml file with configuration inside this directory
