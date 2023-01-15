@@ -29,10 +29,14 @@ df['col1'] = df['col1'].str.replace(',', '-')
 df['col1'] = df['col1'].str.slice(0, 9)
 df['col1'] = df['col1'].str[-1].unique() # last character from each row of col1 -> unique
 df['col1'] = 'my_prefix' + df['col1'].astype(str)
+df['col1'] = df['col1'].fillna(value='replacement value for NaN')
+df = df.fillna(value='replacement value for NaN')
+df['col1'].fillna(df['col2'], inplace=True) # replace the NaN in column 'col1' with the value from column 'col2'
 
 df = df[(df['col1'] == 'val1') & (df['col2'] == 123)]
 df = df[df['col1'] != 123]
 df = df[df.col1 > 100] # only rows where col greater than 100
+df = df[df['col1'].isin(['expected_cell_value1', 'expected_cell_value2', 'expected_cell_value3'])]
 
 df['col7'] = df.iloc[:, 0: 6].sum(axis=1)       # sum columns (from 0th to 6th column)
 df['col8'] = df[['col1', 'col4']].sum(axis=1)   # sum columns ('col1' and 'col4')
