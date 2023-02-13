@@ -20,4 +20,8 @@ git commit --amend -m "updated message"
 
 git rebase -i HEAD~n # Interactive rebase of n last commits locally
 
+git merge origin/remote_branch_name
+
 git branch -m oldname newname # rename branch
+git branch -d branch_name # Delete a branch.
+git branch -D branch_name # (force) Delete a branch.

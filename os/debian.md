@@ -1,1 +1,0 @@
-Win + E // File Browser
