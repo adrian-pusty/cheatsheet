@@ -20,3 +20,7 @@ for ((i=1;i<=END;i++)); do
         echo $i;
     fi
 done
+
+read -r number1
+read -p "Please enter a number2: " number2
+echo $((${number1}+${number2}))
