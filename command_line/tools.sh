@@ -12,7 +12,8 @@ convert -resize 75% input_file_name output_file_name  # ImageMagick # resize pic
 convert -flop input_file_name output_file_name # Horizontal mirroring
 
 # Audio / Video
-ffmpeg -i input_file.extension -ss 00:01:23 -to 00:02:34 -c copy output_file.extension # ~https://unix.stackexchange.com/a/302469/447876 , https://stackoverflow.com/a/42827058/15493760
+ffmpeg -i input_file.extension -ss 00:01:23 -to 00:02:34 -c copy output_file.extension  # ~https://unix.stackexchange.com/a/302469/447876 , https://stackoverflow.com/a/42827058/15493760
+ffmpeg -i input_file.mp3 -f segment -segment_time 900 -c copy output_file%03d.mp3       # split into 15 minute files ~https://unix.stackexchange.com/a/283547/447876
 
 lame --scale <scale you want to increase> <infile> <outfile> # increase mp3 volume
 sudo apt-get install easytag # audio file metadata manipulation tool

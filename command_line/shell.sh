@@ -1,3 +1,5 @@
+lsb_release -a # LSB (Linux Standard Base) and Distribution information.
+
 mkdir -p 	# No error if existing, make parent directories as needed
 top -c | grep 12345 # PID instead of 12345
 
