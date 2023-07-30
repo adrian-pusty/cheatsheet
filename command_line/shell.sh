@@ -22,6 +22,7 @@ vim ~/.bash_aliases # add line: alias name_of_alias='some command -option'
 source ~/.bashrc
 
 grep -rnw '/path/to/somewhere/' -e 'pattern' # https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
+grep -e "keep lines" -e "containing" -e "these character sequences" input.csv > output.csv # 'grep -v -e ...' to select non-matching lines
 
 # shutdown / reboot
 sudo poweroff

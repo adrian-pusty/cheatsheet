@@ -25,3 +25,7 @@ git merge origin/remote_branch_name
 git branch -m oldname newname # rename branch
 git branch -d branch_name # Delete a branch.
 git branch -D branch_name # (force) Delete a branch.
+
+git stash list
+
+git log --oneline # one commit per line

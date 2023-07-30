@@ -9,5 +9,9 @@
 
 - https://twitter.com/javarevisited/status/1545636804144951297?t=Lb4ARBAsgwtkuHyfTyBTvA&s=19[Java Collections]
 
+- https://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users[How to set JAVA_HOME in Linux for all users - stackoverflow]
+
+- https://en.wikipedia.org/wiki/List_of_Java_bytecode_instructions[List of Java bytecode instructions]
+
 === [PL]
 - https://szkolaandroida.pl/[Szkoła Androida]
