@@ -23,11 +23,16 @@ df = df.resample('1M').sum()
 df.index = pd.to_datetime(df.index)
 df.columns = ['new_col_name_1', 'new_col_name_2'] # renaming column names
 
+df.shape
 df.head(1) # Return the first n rows. # df.head() - Viewing the first 5 lines # ~https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html
+df.tail(1)
+df.sample() # Random rows
 
 df['col1'] = df['col1'].str.replace(',', '-')
 df['col1'] = df['col1'].str.slice(0, 9)
 df['col1'] = df['col1'].str[-1].unique() # last character from each row of col1 -> unique
+df["col1"].nunique() # number of unique values
+df["col1"].value_counts() # df["col1"].value_counts(normalize=True) → % occurrence of specific values
 df['col1'] = 'my_prefix' + df['col1'].astype(str)
 df['col1'] = df['col1'].fillna(value='replacement value for NaN')
 df = df.fillna(value='replacement value for NaN')
