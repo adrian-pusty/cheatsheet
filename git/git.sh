@@ -28,7 +28,7 @@ git branch -D branch_name # (force) Delete a branch.
 
 git stash push -m "name"
 git stash list
-git stash apply stash@{n} #apply and keep
-git stash pop stash@{n}   #apply and remove
+git stash apply 'stash@{n}' #apply and keep
+git stash pop 'stash@{n}'   #apply and remove
 
 git log --oneline # one commit per line
