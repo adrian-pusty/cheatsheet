@@ -1,4 +1,5 @@
 import DataFrameCreationExamplesTest.{Person, rddFromCsv}
+import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
 import org.apache.spark.sql.{Column, DataFrame, Row, SparkSession}
@@ -114,3 +115,16 @@ object SeqToDataFrame
   }
 }
 
+object Partitions
+{
+  def repartitionMethodUsage(rdd: RDD[Person]): Unit =
+  {
+    var v1 = rdd.repartition(10)
+  }
+
+  def repartitionMethodUsage(df: DataFrame): Unit = {
+    var v1 = df.repartition(col("abc"))
+    var v2 = df.repartition(10)
+    var v3 = df.repartition(10, col("abc"))
+  }
+}
