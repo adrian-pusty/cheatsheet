@@ -1,0 +1,9 @@
+@startuml
+hide circle
+
+package "p" {
+    class A
+    class B
+    A -up[hidden]- B
+}
+@enduml
