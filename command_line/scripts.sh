@@ -23,7 +23,7 @@ done
 
 read -r val1
 read -p "Please enter second value: " val2
-echo $((${val1}+${val2}))
+echo $((${val1}+val2))
 
 if [ ${val1} -gt ${val2} ]; then
 	echo "val1 is greater than val2";
@@ -41,3 +41,6 @@ fi
 # then
 # 	echo "val1 is less than val2";
 # fi
+
+arr=(1 2 3)
+echo ${arr[1]}

@@ -10,6 +10,7 @@ pdfunite input_1.pdf input_2.pdf output.pdf # Merge multiple pdfs # worked a bit
 # Images
 convert -resize 75% input_file_name output_file_name  # ImageMagick # resize picture
 convert -flop input_file_name output_file_name # Horizontal mirroring
+convert in.png -resize 100x100 -gravity center -background "rgb(255,255,255)" -extent 200x200 out.png # add white padding to png
 
 # Audio / Video
 ffmpeg -i input_file.extension -ss 00:01:23 -to 00:02:34 -c copy output_file.extension  # ~https://unix.stackexchange.com/a/302469/447876 , https://stackoverflow.com/a/42827058/15493760
