@@ -1,5 +1,5 @@
 - tryhaskell.org 
-- [Haskell API search engine](haskell.org/hoogle)
+- [Haskell API search engine](https://hoogle.haskell.org/)
 
 # Books
 - [Learn You a Haskell for Great Good! (book)](http://learnyouahaskell.com/)

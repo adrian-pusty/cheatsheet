@@ -9,10 +9,10 @@
 - c
 
 ## Table
-| aa | bb  | cc |  
-|----|-----|---|  
-| 1 | 2 | 3 |  
-| 4 | 5 | 6 |
+| aa | bb | cc |
+|----|----|----|
+| 1  | 2  | 3  |
+| 4  | 5  | 6  |
 
 ## Links
 [link to google](https://google.com)  
@@ -22,7 +22,7 @@
 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="drawing" width="75" height="25"/>
 
 ### Other
-[//]: #"comment"
+[//]: # (comment)
 [comment]: <> (comment)
 
 **bold**

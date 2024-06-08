@@ -8,6 +8,7 @@ git config -l # list all
 
 # ...
 git remote rm {remote-name} # remove remote
+git remote set-url origin {new-url}
 
 git reset HEAD~ # Delete last commit locally
 git reset --hard HEAD~1 # https://stackoverflow.com/a/1338744/15493760
@@ -32,3 +33,4 @@ git stash apply 'stash@{n}' #apply and keep
 git stash pop 'stash@{n}'   #apply and remove
 
 git log --oneline # one commit per line
+git shortlog -ns # number of commits, user
