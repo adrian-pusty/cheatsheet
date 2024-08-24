@@ -1,4 +1,7 @@
 @startuml
+left to right direction
+'top to bottom direction
+
 hide circle
 
 img : <img src=https://avatars.githubusercontent.com/u/51136868{scale=0.1}>
@@ -8,4 +11,15 @@ package "p" {
     class B
     A -up[hidden]- B
 }
+
+together {
+    class C
+    class D
+}
+class E
+C ----- E
+
+note left of B
+  This is a note
+end note
 @enduml
