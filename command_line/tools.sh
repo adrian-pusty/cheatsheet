@@ -19,3 +19,8 @@ ffmpeg -i input_file.mp3 -f segment -segment_time 900 -c copy output_file%03d.mp
 lame --scale <scale you want to increase> <infile> <outfile> # increase mp3 volume
 sudo apt-get install easytag # audio file metadata manipulation tool
 mp3info -p "%m" file.mp3 # length in minutes
+
+# cleanup # clean up
+sudo apt-get clean
+sudo du -ah --max-depth=100 / | sort -hr | head -n 20
+docker system prune

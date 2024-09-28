@@ -15,8 +15,7 @@ git reset --hard HEAD~1 # https://stackoverflow.com/a/1338744/15493760
 
 git checkout -b branch_name # Create new branch locally
 
-# Change last commit message
-git commit --amend
+git commit --amend # Change last commit message
 git commit --amend -m "updated message"
 
 git rebase -i HEAD~n # Interactive rebase of n last commits locally
@@ -34,3 +33,5 @@ git stash pop 'stash@{n}'   #apply and remove
 
 git log --oneline # one commit per line
 git shortlog -ns # number of commits, user
+
+git add --chmod=+x # make executable

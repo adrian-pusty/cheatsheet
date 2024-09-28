@@ -24,3 +24,6 @@ fi
 
 arr=(1 2 3)
 echo ${arr[1]}
+echo "${arr[@]: -2}"    # last two elements
+echo "${arr[@]: -1}"    # last element        # echo "${result[-1]}"
+echo "${arr[@]: -2: 1}" # second to last      # echo "${result[-2]}"
