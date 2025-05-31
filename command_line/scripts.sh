@@ -1,5 +1,5 @@
 xdg-open # opens a file or URL in the user's preferred application
-command1 & command2 & command3 # https://askubuntu.com/questions/990423/how-can-i-run-multiple-commands-which-have-in-one-command-line
+xdg-open "https://google.com" & xdg-open "https://youtube.com" # &
 
 read -r val1
 read -p "Please enter second value: " val2
@@ -23,7 +23,9 @@ fi
 # fi
 
 arr=(1 2 3)
+arr2=(4 5 6)
 echo ${arr[1]}
 echo "${arr[@]: -2}"    # last two elements
 echo "${arr[@]: -1}"    # last element        # echo "${result[-1]}"
 echo "${arr[@]: -2: 1}" # second to last      # echo "${result[-2]}"
+arr+=("${arr2[@]}")
