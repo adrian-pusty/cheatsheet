@@ -10,6 +10,15 @@ package "p" {
     class A
     class B
     A -up[hidden]- B
+
+    class Car implements Vehicle
+    Object <|-- Car : (extends)
+
+    Car ..right-> Fuel : (use)
+
+    Car -- Person : Association (leasing)
+    Car --o Garage : Aggregation
+    Car *-- Engine : Composition
 }
 
 together {

@@ -1,0 +1,16 @@
+@startuml
+actor User as u
+participant "A" as a
+participant "B" as b
+
+u -> a: login
+a -> a: def
+note right of a: ghi
+a -> b: jkl
+
+alt Successful login
+    a -> u: Display welcome message
+else Failed login
+    a -> u: Display error message
+end
+@enduml
