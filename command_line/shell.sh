@@ -10,6 +10,7 @@ du -sm *  # ~howtogeek.com/168135/list-files-and-directories-by-size-on-linux/
 du -sh abc* | sort -rh # sort by size
 
 cat file1 file2 file3 >> output # merging file1, file2 and file3 to output file
+cat file1 | tail -4 | head -2 > output # first two lines from the last four lines of the file1
 
 find . -name '*java' -mtime +10 -newer App.java
 
@@ -29,3 +30,8 @@ sudo poweroff
 sudo reboot
 
 tar -xvjf file.tar.bz2  # extract bz2
+
+printf %.3f $(echo "$f" | bc -l)      # calculate formula contained in f string variable
+printf %.3f $(echo "$a / $b" | bc -l) # calculate a / b
+
+rsync -av /path/to/source/dir /path/to/target/dir

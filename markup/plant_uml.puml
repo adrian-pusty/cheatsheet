@@ -23,12 +23,13 @@ package "p" {
 
 together {
     class C
-    class D
+    class "references other [[sequence.puml file]]" as D
 }
 class E
 C ----- E
 
 note left of B
-  This is a note
+  This is a [[https://www.youtube.com/watch?v=dQw4w9WgXcQ note]]
+  with link
 end note
 @enduml
