@@ -23,9 +23,10 @@ Create .circleci directory in a root directory of the project and config.yml fil
 
 - [Test your shell knowledge by taking the CMD Challenge](https://cmdchallenge.com/)
 
+- [Cloud Native Landscape](https://landscape.cncf.io/)
+
 ## n8n
-- [n8n Workflow Automation Templates](https://n8n.io/workflows/)
-- [✨🤖Automate Multi-Platform Social Media Content Creation with AI](https://n8n.io/workflows/3066-automate-multi-platform-social-media-content-creation-with-ai/)
+- [n8n Workflow Automation Templates → ✨🤖Automate Multi-Platform Social Media Content Creation with AI](https://n8n.io/workflows/3066-automate-multi-platform-social-media-content-creation-with-ai/)
 
 ## Contribute to projects on GitHub
 - [Relevant projects, first issues](https://github.com/topics/<TOPIC>)

@@ -36,3 +36,10 @@ git log --oneline # one commit per line
 git shortlog -ns # number of commits, user
 
 git add --chmod=+x # make executable
+
+# large files
+## install git lfs
+git lfs track file_to_be_tracked
+## git add .gitattributes file
+## git commit .gitattributes file
+## git commit file_to_be_tracked

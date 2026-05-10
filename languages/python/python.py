@@ -7,3 +7,7 @@ print(hello_world_str[:3]) #'Hel'
 print(hello_world_str[:-3]) #'Hello Wor'
 print(hello_world_str[-3:]) #'ld!'
 print(hello_world_str[3:-3]) #'lo Wor'
+
+# input
+user_input = input("Enter a word: ")
+print(user_input)

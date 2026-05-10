@@ -3,8 +3,9 @@ lsb_release -a # LSB (Linux Standard Base) and Distribution information.
 mkdir -p 	# No error if existing, make parent directories as needed
 top -c | grep 12345 # PID instead of 12345
 
-ls -1 .		# Listing files in a single column
-ls -lh    # -h, --human-readable # print sizes like 1K 234M 2G etc.
+ls -1 .		                  # Listing files in a single column
+ls -lh                      # -h, --human-readable # print sizes like 1K 234M 2G etc.
+ls -a *.pdf | tr '\n' ' '   # list all pdf files in a single line (space separated)
 
 du -sm *  # ~howtogeek.com/168135/list-files-and-directories-by-size-on-linux/
 du -sh abc* | sort -rh # sort by size

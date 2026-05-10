@@ -32,4 +32,7 @@ note left of B
   This is a [[https://www.youtube.com/watch?v=dQw4w9WgXcQ note]]
   with link
 end note
+
+F ||-o{ G
+G ||--o{ H
 @enduml
